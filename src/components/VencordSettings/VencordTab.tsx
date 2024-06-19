@@ -327,4 +327,4 @@ function DonateCard({ image }: DonateCardProps) {
     );
 }
 
-export default wrapTab(VencordSettings, "Equicord Settings");
+export default wrapTab(VencordSettings, "Arcanecord Settings");
