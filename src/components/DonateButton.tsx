@@ -22,14 +22,6 @@ import { Heart } from "./Heart";
 
 export default function DonateButton(props: any) {
     return (
-        <Button
-            {...props}
-            look={Button.Looks.LINK}
-            color={Button.Colors.TRANSPARENT}
-            onClick={() => VencordNative.native.openExternal("https://github.com/sponsors/vendicated")}
-        >
-            <Heart />
-            Donate
-        </Button>
+
     );
 }
