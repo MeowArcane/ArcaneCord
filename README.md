@@ -1,6 +1,6 @@
-# Equicord
+# ArcaneCord
 
-An enhanced version of [Vencord](https://github.com/Vendicated/Vencord) by [Vendicated](https://github.com/Vendicated) called Equicord.
+An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.com/Vendicated/Vencord) by [Vendicated](https://github.com/Vendicated) called ArcaneCord.
 
 ![image](https://i.ibb.co/xgNr2gq/image-2023-11-24-122019133.png)
 
