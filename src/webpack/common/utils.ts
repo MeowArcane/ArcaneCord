@@ -16,6 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+import { canonicalizeMatch } from "@utils/patches";
 import type { Channel } from "discord-types/general";
 
 import { _resolveReady, filters, findByCodeLazy, findByPropsLazy, findLazy, mapMangledModuleLazy, waitFor } from "../webpack";
@@ -39,7 +40,8 @@ waitFor(["dispatchToLastSubscribed"], m => ComponentDispatch = m);
 
 export const Constants: t.Constants = mapMangledModuleLazy('ME:"/users/@me"', {
     Endpoints: filters.byProps("USER", "ME"),
-    UserFlags: filters.byProps("STAFF", "SPAMMER")
+    UserFlags: filters.byProps("STAFF", "SPAMMER"),
+    FriendsSections: m => m.PENDING === "PENDING" && m.ADD_FRIEND
 });
 
 export const RestAPI: t.RestAPI = findLazy(m => typeof m === "object" && m.del && m.put);
@@ -155,3 +157,10 @@ export const UserProfileActions = findByPropsLazy("openUserProfileModal", "close
 export const InviteActions = findByPropsLazy("resolveInvite");
 
 export const IconUtils: t.IconUtils = findByPropsLazy("getGuildBannerURL", "getUserAvatarURL");
+
+const openExpressionPickerMatcher = canonicalizeMatch(/setState\({activeView:\i/);
+// TODO: type
+export const ExpressionPickerStore = mapMangledModuleLazy("expression-picker-last-active-view", {
+    closeExpressionPicker: filters.byCode("setState({activeView:null"),
+    openExpressionPicker: m => typeof m === "function" && openExpressionPickerMatcher.test(m.toString()),
+});

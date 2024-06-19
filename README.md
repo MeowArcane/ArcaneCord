@@ -2,7 +2,7 @@
 
 An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.com/Vendicated/Vencord) by [Vendicated](https://github.com/Vendicated) called ArcaneCord.
 
-![image](https://i.ibb.co/xgNr2gq/image-2023-11-24-122019133.png)
+![image](https://github.com/Equicord/Equicord/assets/78185467/81707ad9-3a04-4f76-88a0-60ee70684f81)
 
 ## Features
 
@@ -21,7 +21,7 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 -   Request for plugins from Discord.
 
 <details>
-<summary>Extra included plugins (64 additional plugins)</summary>
+<summary>Extra included plugins (62 additional plugins)</summary>
 
 - AllCallTimers by MaxHerbold and D3SOX
 - AltKrispSwitch by newwares
@@ -29,7 +29,6 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 - BetterActivities by D3SOX, Arjix, AutumnVN
 - BetterQuests by kvba
 - BetterQuickReact by Ven and Sqaaakoi
-- BetterShopPreview by Tolgchu
 - BlockKrsip by D3SOX
 - BypassDND by Inbestigator
 - CleanChannelName by AutumnVN
@@ -78,7 +77,6 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 - SoundBoardLogger by Moxxie, fres, echo, thororen
 - TalkInReverse by Tolgchu
 - ThemeLibrary by Fafa
-- Title by Kyuuhachi
 - UnlimitedAccounts by Balaclava and thororen
 - UserPFP by nexpid and thororen
 - VCSupport by thororen
