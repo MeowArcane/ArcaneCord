@@ -1,20 +1,8 @@
 /*
- * Vencord, a modification for Discord's desktop app
- * Copyright (c) 2022 Vendicated and contributors
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
+ * Vencord, a Discord client mod
+ * Copyright (c) 2024 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 
 import { Link } from "@components/Link";
 import { Devs, EquicordDevs } from "@utils/constants";
@@ -32,8 +20,8 @@ function removeAppIcon() {
     const index = icons.findIndex(icon => current_icon === icon.id);
     if (index !== -1) {
         icons = icons.filter(e => e.id !== current_icon);
-        delete findByProps("ICONS", "ICONS_BY_ID").ICONS_BY_ID[current_icon];
-        delete findByProps("ICONS", "ICONS_BY_ID").ICONS[findByProps("ICONS", "ICONS_BY_ID").ICONS.findIndex((icon => current_icon === icon?.id))];
+        delete findByProps("UZ", "QA").QA[current_icon];
+        delete findByProps("UZ", "QA").UZ[findByProps("UZ", "QA").UZ.findIndex((icon => current_icon === icon?.id))];
         localStorage.setItem("vc_app_icons", JSON.stringify(icons));
         showToast("Icon successfully deleted!", Toasts.Type.SUCCESS);
         FluxDispatcher.dispatch({
@@ -54,7 +42,7 @@ export default definePlugin({
     authors: [Devs.HappyEnderman, EquicordDevs.SerStars],
     patches: [
         {
-            find: ".PremiumUpsellTypes.APP_ICON_UPSELL",
+            find: /\i\.\i\.APP_ICON_UPSELL/,
             replacement: [
                 {
                     match: /\w+\.jsx\)\(\w+,{markAsDismissed:\w+,isCoachmark:\w+}\)/,
@@ -71,8 +59,8 @@ export default definePlugin({
         console.log("Well hello there!, CustomAppIcons has started :)");
         const appIcons = JSON.parse(localStorage.getItem("vc_app_icons") ?? "[]");
         for (const icon of appIcons) {
-            findByProps("ICONS", "ICONS_BY_ID").ICONS.push(icon);
-            findByProps("ICONS", "ICONS_BY_ID").ICONS_BY_ID[icon.id] = icon;
+            findByProps("UZ", "QA").UZ.push(icon);
+            findByProps("UZ", "QA").QA[icon.id] = icon;
         }
     },
     stop() {

@@ -21,21 +21,18 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 -   Request for plugins from Discord.
 
 <details>
-<summary>Extra included plugins (62 additional plugins)</summary>
+<summary>Extra included plugins (58 additional plugins)</summary>
 
 - AllCallTimers by MaxHerbold and D3SOX
 - AltKrispSwitch by newwares
-- Annamox by Kyuuhachi
+- Anammox by Kyuuhachi
 - BetterActivities by D3SOX, Arjix, AutumnVN
-- BetterQuests by kvba
 - BetterQuickReact by Ven and Sqaaakoi
 - BlockKrsip by D3SOX
 - BypassDND by Inbestigator
 - CleanChannelName by AutumnVN
-- ColorMessage by Kyuuhachi
 - CopyUserMention by Cortex and castdrian
 - CustomAppIcons by Happy Enderman and SerStars
-- CustomScreenShare by KawaiianPizza
 - DNDWhilePlaying by thororen
 - DoNotLeak by Perny
 - DoubleCounterBypass by nyx
@@ -62,7 +59,7 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 - NotifyUserChanges by D3SOX
 - OnePingPerDM by ProffDea
 - PlatformSpoofer by Drag
-- MessagePurge by bhop and nyx
+- PurgeMessages by bhop and nyx
 - QuestionMarkReplacement (QuestionMarkReplace) by nyx
 - Quoter by Samwich
 - RepeatMessage by Tolgchu
@@ -71,7 +68,6 @@ An enhanced version of Equicord, a enhanced verson of [Vencord](https://github.c
 - Search by JacobTm and thororen
 - SearchFix by Jaxx
 - Sekai Stickers by MaiKokain
-- ServerProfilesToolbox by D3SOX
 - ShowBadgesInChat by Inbestigator and KrystalSkull
 - Slap by Korbo
 - SoundBoardLogger by Moxxie, fres, echo, thororen
